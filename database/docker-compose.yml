@@ -1,0 +1,12 @@
+version: '4.0'
+services:
+  shopdatabase:
+    image: postgres:13
+    restart: unless-stopped
+    ports:
+      - 5434:5432
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password1234
+      POSTGRES_DB: shop
+    container_name: sqldata
