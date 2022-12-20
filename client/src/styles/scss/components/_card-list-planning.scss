@@ -1,0 +1,25 @@
+@import "../variables";
+
+.card-list-planning {
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 50px;
+    padding: 15px 0;
+  }
+  .title-wrapper {
+    position: relative;
+    height: 100px;
+    .title {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2.5rem;
+    }
+  }
+}

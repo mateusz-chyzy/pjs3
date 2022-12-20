@@ -1,0 +1,226 @@
+.card {
+  width: 360px;
+  height: 335px;
+  background-color: $white;
+  border-radius: 5px;
+  box-shadow: 8px 8px 15px 0px $light-grey;
+  position: relative;
+  font-size: 1.1rem;
+  font-family: "Fira Mono", monospace;
+  font-weight: 500;
+  letter-spacing: -0.1em;
+  .image-wrapper {
+    width: 360px;
+    img {
+      width: 360px;
+      height: 260px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+  }
+  .info-wrapper {
+    height: 80px;
+    padding: 0 10px;
+    @include font-simple;
+    color: $new-black;
+    .title-wrapper {
+      font-size: 1.7rem;
+      height: 38px;
+    }
+    .subtitle-wrapper {
+      display: grid;
+      grid-template-columns: auto auto;
+      .price-wrapper {
+        display: flex;
+        margin-right: auto;
+        color: $new-grey-dark;
+      }
+      .rating-wrapper {
+        display: flex;
+        margin-left: auto;
+        font-weight: 600;
+        color: $new-grey-dark;
+      }
+    }
+  }
+  .info-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 335px;
+    border-radius: 5px;
+    background-color: $white;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+    font-size: 1.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .add-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: $white;
+    border-radius: 40%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-info-wrapper {
+    background-color: rgba($light-grey, 0.6);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    .card-info {
+      @include font-simple;
+      background-color: $white;
+      z-index: 2;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 1400px;
+      height: 720px;
+      border-radius: 15px;
+      .top-wrapper {
+        position: relative;
+        .title {
+          font-size: 3rem;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          top: 5px;
+          color: $new-black;
+          border-bottom: 5px solid $new-orange;
+        }
+        .close-icon {
+          width: 25px;
+          position: absolute;
+          right: 10px;
+          top: 5px;
+          cursor: pointer;
+          padding: 15px;
+          background-color: $new-white;
+          transition-property: backgroud-color;
+          border-radius: 50%;
+        }
+        .close-icon:hover {
+          background-color: $new-creamy;
+        }
+      }
+      .mid-wrapper {
+        position: relative;
+        top: 80px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .left-wrapper {
+          width: 700px;
+          .image {
+            width: 700px;
+            height: 530px;
+            margin-right: 10px;
+          }
+          .left-bottom-wrapper {
+            border-right: 1px solid rgba($light-grey, 0.9);
+            color: $new-black;
+            margin-left: 10px;
+            margin-top: 5px;
+            position: relative;
+            font-size: 1.35rem;
+            .panel {
+              position: absolute;
+              top: 100px;
+              background-color: $black;
+            }
+          }
+        }
+        .right-wrapper {
+          text-align: justify;
+          font-size: 1.5rem;
+          margin: 0 10px;
+          font-size: 1.25rem;
+        }
+      }
+      .bottom-wrapper {
+        position: relative;
+        top: 700px;
+        .add-button-info {
+          background-color: red;
+        }
+      }
+    }
+  }
+  .hover {
+    position: absolute;
+    top: 0;
+    width: 360px;
+    height: 335px;
+    border-radius: 5px;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+    .hover-bg {
+      position: absolute;
+      top: 0;
+      width: 360px;
+      height: 335px;
+      background-color: $new-white;
+      border-radius: 5px;
+      opacity: 1;
+      transition-property: opacity;
+      transition-duration: 0.2s;
+    }
+    .info-button-planning {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $new-white;
+      color: $new-black;
+      width: 250px;
+      @include font-simple;
+      font-size: 1.3rem;
+    }
+    .add-button-planning {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $new-white;
+      color: $new-black;
+      width: 250px;
+      @include font-simple;
+      font-size: 1.3rem;
+    }
+  }
+  .hover:hover {
+    opacity: 1;
+    .hover-bg {
+      opacity: 0.75;
+    }
+  }
+}
+
+.card:hover {
+  .info-button {
+    opacity: 0.75;
+  }
+}
+
+.highlighted {
+  background-color: $new-orange !important;
+}
+
+.orange {
+  background-color: $orange !important;
+}

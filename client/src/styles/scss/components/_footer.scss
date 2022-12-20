@@ -1,0 +1,23 @@
+@import "../variables";
+
+.footer {
+  width: 100vw;
+  height: 250px;
+  color: $new-black;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid rgba($new-grey, 0.5);
+  box-shadow: 0px -30px 40px -40px $new-grey;
+  @include font-simple;
+  .footer-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    * {
+      text-align: center;
+      margin: 30px 0;
+    }
+  }
+}

@@ -1,0 +1,229 @@
+@import "../variables";
+
+.input-form-home {
+  .input-form {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background-color: rgba($new-white, 0.95);
+    padding: 0 5px 20px 5px;
+    border-radius: 10px;
+    border: 1px solid rgba($new-grey, 0.3);
+    .input-container {
+      border-radius: 20px;
+      padding: 10px 20px;
+      height: 450px;
+      z-index: 1;
+    }
+    .item-1 {
+      margin: 20px 0;
+      label {
+        @include font-simple;
+        color: $new-black;
+      }
+    }
+    .item-2 {
+      margin: 20px 0;
+      label {
+        @include font-simple;
+        color: $new-black;
+      }
+    }
+    .item-3 {
+      margin: 20px 0;
+      * {
+        width: 895px;
+      }
+      label {
+        @include font-simple;
+        color: $new-black;
+      }
+    }
+    .item-4 {
+      margin: 20px 0;
+      margin-left: 5px;
+      width: 905px;
+      p {
+        @include font-simple;
+        color: $new-black;
+        font-size: 1.5rem;
+      }
+      input {
+        @include font-simple;
+        color: $new-black;
+        font-size: 1.5rem;
+        margin-left: 15px;
+      }
+    }
+    .item-5 {
+      margin: 20px 0;
+      margin-left: 5px;
+      width: 905px;
+      p {
+        @include font-simple;
+        color: $new-black;
+        font-size: 1.5rem;
+      }
+      input {
+        @include font-simple;
+        color: $new-black;
+        font-size: 1.5rem;
+        margin-left: 15px;
+      }
+      div {
+        width: 120px;
+      }
+    }
+    input {
+      display: block;
+      width: 850px;
+      height: 20px;
+      margin: 10px 0;
+      border: none;
+      z-index: 2;
+      @include font-simple;
+      font-size: 2rem;
+      color: $new-black;
+    }
+    .submit-button {
+      width: 150px;
+      height: 50px;
+      display: flex;
+      float: right;
+      z-index: 2;
+      justify-content: center;
+      background-color: $new-orange;
+      color: $new-black;
+      font-size: 1.5rem;
+      border-radius: 50px;
+      cursor: pointer;
+      border: none;
+      align-items: center;
+      margin-top: 55px;
+      margin-right: 20px;
+    }
+  }
+}
+.input-form-planning {
+  .input-form {
+    position: relative;
+    padding: 0 5px 0 5px;
+    display: flex;
+    height: 260px;
+    width: $content-width;
+    .input-container {
+      border-radius: 20px;
+      padding: 10px 20px;
+      height: 120px;
+      width: 100%;
+      z-index: 1;
+    }
+    .item-1 {
+      display: inline;
+      margin: 20px 0;
+      margin-right: 25px;
+      label {
+        @include font-simple;
+        color: $new-black;
+      }
+    }
+    .item-2 {
+      display: inline;
+      margin: 20px 0;
+      margin-right: 25px;
+      label {
+        @include font-simple;
+        color: $new-black;
+      }
+    }
+    .item-3 {
+      display: inline;
+      margin: 20px 0;
+      * {
+        width: 495px;
+      }
+      label {
+        @include font-simple;
+        color: $new-black;
+      }
+    }
+    .item-4 {
+      display: inline;
+      margin: 30px 0;
+      margin-left: 5px;
+      width: 905px;
+      p {
+        @include font-simple;
+        color: $new-black;
+        font-size: 1.5rem;
+      }
+      input {
+        @include font-simple;
+        color: $new-black;
+        font-size: 1.5rem;
+        margin-left: 15px;
+      }
+    }
+    .item-5 {
+      display: inline;
+      margin: 20px 0;
+      margin-left: 5px;
+      width: 905px;
+      p {
+        @include font-simple;
+        color: $new-black;
+        font-size: 1.5rem;
+      }
+      input {
+        @include font-simple;
+        color: $new-black;
+        font-size: 1.5rem;
+        margin-left: 15px;
+      }
+      div {
+        width: 120px;
+      }
+    }
+    input {
+      display: block;
+      width: 450px;
+      height: 20px;
+      margin: 10px 0;
+      border: none;
+      z-index: 2;
+      @include font-simple;
+      font-size: 2rem;
+      color: $new-black;
+    }
+    .submit-button {
+      width: 150px;
+      height: 50px;
+      display: flex;
+      float: right;
+      z-index: 2;
+      justify-content: center;
+      background-color: $new-orange;
+      color: $new-black;
+      font-size: 1.5rem;
+      border-radius: 50px;
+      cursor: pointer;
+      border: none;
+      align-items: center;
+      margin-top: 55px;
+      margin-right: 20px;
+
+      display: none;
+    }
+  }
+}
+
+.submit {
+  float: right;
+  padding: 7px 15px !important;
+  border-radius: 25px !important;
+  background-color: $new-blue !important;
+  margin-right: 20px !important;
+  @include font-simple;
+  font-size: 1.15rem !important;
+}

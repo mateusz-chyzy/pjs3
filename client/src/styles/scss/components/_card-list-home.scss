@@ -1,0 +1,33 @@
+@import "../variables";
+
+.card-list-home {
+  border-radius: 25px;
+  background-image: linear-gradient(to bottom, $new-white, $new-creamy);
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 40px;
+    width: $content-width;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+  .title-wrapper-list {
+    position: relative;
+    height: 90px;
+    margin: 0 0 25px 0;
+    border-top: 1px solid $new-creamy;
+    box-shadow: 0px -30px 40px -20px $new-creamy;
+    .title {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      padding: 0 10px;
+      @include font-1;
+      border-bottom: 4px solid $new-orange;
+      padding-bottom: 5px;
+    }
+  }
+}
