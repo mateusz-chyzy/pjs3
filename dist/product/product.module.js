@@ -18,6 +18,7 @@ ProductModule = __decorate([
         imports: [],
         controllers: [product_controller_1.ProductController],
         providers: [product_service_1.ProductService, prisma_service_1.PrismaService],
+        exports: [product_service_1.ProductService],
     })
 ], ProductModule);
 exports.ProductModule = ProductModule;
